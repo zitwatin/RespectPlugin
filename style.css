@@ -1,0 +1,488 @@
+.spector-profilepicture {
+	border-radius: 45px;
+	float: left;
+	margin: 0px 20px 0px 0px;
+}
+
+.respect-comment-question {
+	margin: 5px 0px 5px 0px;
+}
+.respect-onderdeel {
+	float: left;
+	width: 100%;
+	left: 0px;
+	clear:both;
+}
+
+input, textarea {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;	
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+input:focus, textarea:focus {
+	background: white !important;
+	border-color: #19b31c !important;
+}
+
+span.spectortext, label.spectortext {
+	color: black;
+	text-transform: none !important;
+	background: rgba(255,  183,  0, 0.51);
+	margin: 5px 15px 5px 0px;
+	float: left;
+	position: relative;
+	padding: 10px 15px 10px 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	max-width: 82%;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+
+.spectortext-small {
+	color: black;
+	text-transform: none !important;
+	background: white;
+	float: left;
+	position: relative;
+	padding: 3px 15px 3px 15px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	max-width: 82%;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: x-small;
+}
+.naarreactiedeel {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	padding: 5px;
+	padding-left: 10%;
+	border-top: 1px #ccc solid;
+	z-index: 9999;
+	background: silver;
+	width: 100%;
+	margin: 0px;
+}
+.naarartikel {
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	padding: 5px;
+	padding-left: 10%;
+	border-top: 1px #ccc solid;
+	z-index: 9999;
+	background: silver;
+	width: 100%;
+	margin: 0px;
+}
+
+span.spectortext:after, label.spectortext:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 10px 15px 10px 0;
+	border-color: transparent rgba(255,  183,  0, 0.51);
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-top: -12px;
+	left: -15px;
+	top: 22px;
+}
+
+input#respect-next, input.respect-next {
+	margin: 5px 0px 10px 20px;
+	float: right;
+	color: black !important;
+	background: #ccc;
+	width: 90%;
+}
+/*
+#respect-eindigen {
+	margin: 0px 0px 5px 20px;
+	text-transform: uppercase;
+	text-align: center;
+	padding: 10px;
+	float: right;
+	background: #4577eb;
+	color: white !important;
+	width: 90%;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+*/
+
+span.clearboth {
+	clear: both !important;
+	width: 100%;
+	position: relative;
+	float: left;
+}
+
+input.respectveld, textarea.respectveld, #comment {
+	margin-left: 20px;
+	margin-bottom: 5px;
+	float: right;
+	position: relative;
+	width: 90%;
+	min-height: 60px;
+	padding: 5px;
+	padding-left: 32px;
+	padding-right: 10px;
+	background: rgba(180, 230, 105, 0.41);
+	border: #B4E56A 2px solid;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	font-size: 13px;
+}
+#comment {
+	padding-top: 15px;
+}
+textarea {
+    resize:none;
+    overflow:hidden;
+}
+.bubble {
+	content: '';
+	float: right;
+	position: relative;
+	left: 50px;
+	border-style: solid;
+	border-width: 10px 0 10px 12px;
+	border-color: transparent #B4E56A;
+	display: block;
+	width: 0;
+	z-index: 1;
+	right: 0px;
+	top: 10px;
+}
+
+label.respectoption, label.subscribe-label, #bonusvraag-mail, .cookiesaccepteren {
+    cursor: pointer;
+    text-transform: none !important;
+    background: rgba(103, 222, 75, 0.67) !important;
+	border-radius: 25px !important;
+	color: rgba(5, 44, 5, 0.98);
+	padding: 10px;	
+	padding-left: 20px;
+	margin-left: 20px;
+	float: right;
+	position: relative;
+	width: 43%;
+	min-width: 225px;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;	
+}
+label.subscribe-label {
+	width: 90% !important;	
+}
+input.respectoptie {
+	visibility: hidden;	
+}
+input.respectoptie:checked + label {
+    background: rgba(77, 124, 234, 0.91) !important;
+	border-radius: 25px !important;
+	color: white;		
+}
+.chosenrespectoption {
+    cursor: default;
+	padding: 10px 20px 10px 20px;
+	margin-left: 20px;
+	float: right;
+	position: relative;
+	width: 43%;
+	min-width: 225px;	
+    background: rgba(77, 124, 234, 0.91) !important;
+	border-radius: 25px !important;
+	color: white;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	font-size: 13px;	
+}
+.unclickable:hover {
+    cursor: default;
+}
+
+#submit {
+	margin: 5px 0px 10px 20px;
+	float: right;
+	width: 90%;
+	background: rgba(46, 32, 171, 1);
+	border-radius: 25px !important;
+}
+
+.comment-form-url {
+	display: none !important;	
+}
+
+.comment-subscription-form {
+	float:right;
+	width: 85%;
+	margin: 0px;
+	text-align: left;
+}
+
+input#subscribe_blog, input#subscribe_comments {
+}
+input#subscribe_blog:checked + label, input#subscribe_comments:checked + label {
+    background: rgba(77, 124, 234, 0.91) !important;
+	border-radius: 25px !important;
+	color: white;		
+}
+
+#respect-field-decomment, #decomment .bubble, #respect-field-einde, #einde .bubble {
+	display: none;
+}
+
+.form-submit {
+	text-align:right;
+}
+
+#cookie-achtergrond {
+	position: fixed;
+	top: 0px;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	width: 100%;
+	height: 100%;
+//	background: linear-gradient(109deg, #ffc400, #ffab00, #ffa700, #ffe600) transparent !important;
+	background: linear-gradient(109deg, #33d656, #55a5d8, #d5a429, #d52973);
+	background-size: 800% 800% !important;	
+	-webkit-animation: Veelkleurigheid 10s ease infinite !important;
+	-moz-animation: Veelkleurigheid 10s ease infinite !important;
+	animation: Veelkleurigheid 10s ease infinite !important;
+	z-index: 10000;
+}
+#cookie-tekstvak {
+	position: fixed;
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	background: white;
+	max-width: 80%;
+	padding: 30px;
+	margin: 10%;
+	margin-top: 50px;
+}
+.cookiesaccepteren {
+	margin-left: 20px !important;
+}
+.cookies-wistjedat {
+	clear: both;
+	font-style: italic;
+}
+
+@media screen and (max-width: 56.8em) {
+	.cookies-meer {
+		display: none !important;
+	}
+	.sidebar {
+		background: rgba(204,  204,  204, 0.29);
+		clear: both;
+	}
+	span.spectortext, label.spectortext {
+		max-width: 70%;
+	}
+	label.respectoption, label.subscribe-label {
+		width: 90%;	
+	}
+	.bubble {
+		display: none;
+	}
+	textarea:placeholder-shown {
+		min-height: 150px;
+	}
+	textarea, input.respectveld {
+		padding-left: 15px !important;
+	}
+}
+@media screen and (max-width: 390px) {
+	.spector-profilepicture {
+		border-radius: 45px;
+		float: left;
+		margin: 0px 20px 0px 0px;
+		width: 40px;
+	}
+	input.respectveld, textarea.respectveld, #comment {
+		width: 100%;	
+	}
+	span.spectortext, label.spectortext {	
+		max-width: 195px;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;
+	}
+	span.spectortext:after, label.spectortext:after {
+		margin-top: -16px;
+	}
+
+	#submit {
+		width: 90% !important;
+	}
+}
+
+@media screen and (max-width: 334px) {	
+/*
+	PIJLTJE BOVEN HET TEKSTWOLKJE
+*/
+	span.spectortext, label.spectortext {
+		margin: 17px 15px 5px 0px;
+		max-width: 100%;
+	}
+	span.spectortext:after, label.spectortext:after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-width: 0 15px 15px;
+		border-color: rgba(255,  183,  0, 0.51) transparent;
+		display: block;
+		margin-top: 2px;
+		width: 0;
+		z-index: 1;
+		top: -17px;
+		left: 7px;
+	}
+	.spector-bonusvraag:after {
+		content: '';
+		position: absolute;
+		border-style: solid;
+		border-width: 0 15px 15px;
+		border-color: rgba(255, 225, 0, 1) transparent !important;
+		display: block;
+		margin-top: 2px;
+		width: 0;
+		z-index: 1;
+		top: -17px;
+		left: 7px;
+	}
+	#bonusvraag-mail {
+		clear: both;
+		float: left;
+		margin-left: 20px !important;
+		width: 80% !important;
+		margin-bottom: 0px;
+	}
+}
+
+#bedanktvooralles .bubble, #decommentisingevuld .bubble {
+	display: none;
+} 
+
+.eerengeweten {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+	padding: 10px;
+	float: left;
+	width: 100%;
+}
+#submit {
+	text-transform: none;
+	float:right;
+}
+
+.comments-title {
+	border-top: none !important;	
+}
+article {
+	margin-bottom: 10px !important;
+}
+
+.bijdragerespect {
+	
+}
+.artikelrespect {
+	
+}
+
+#eengesprekover {
+	float:left;
+}
+
+#bonusvraag {
+	display: none;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	padding: 5px;
+	padding-left: 10%;
+	border-top: 1px #ccc solid;
+	z-index: 9999;
+	background: white;
+	width: 100%;
+	margin: 0px;
+}
+.spector-bonusvraag {
+	background: rgba(255, 221, 0, 1) !important;
+//	background: linear-gradient(109deg, #ffc400, #ffab00, #ffa700, #ffe600) transparent !important;
+//	background-size: 800% 800% !important;	
+//	-webkit-animation: Veelkleurigheid 10s ease infinite !important;
+//	-moz-animation: Veelkleurigheid 10s ease infinite !important;
+//	animation: Veelkleurigheid 10s ease infinite !important;
+}
+.spector-bonusvraag:after {
+	content: '';
+	position: absolute;
+	border-style: solid;
+	border-width: 10px 15px 10px 0;
+	border-color: transparent rgba(255, 221, 0, 1) !important;
+	display: block;
+	width: 0;
+	z-index: 1;
+	margin-top: -12px;
+	left: -15px;
+	top: 22px;
+}
+#bonusvraag-mail {
+	clear: both;
+	float: left;
+	margin-left: 120px;
+	width: 100%;
+	margin-bottom: 0px;
+}
+#bonusvraag-mail a {
+	color: black;
+}
+.bonusvraag-nietmeertonen {
+	font-family: Montserrat, "Helvetica Neue", sans-serif;
+}
+.site-description, .site-title {
+	background:white;
+	padding: 5px;
+}
+
+.site-header {
+	margin-bottom: 15px;
+	padding-top: 5px;
+	padding-bottom: 0px;
+
+	background: -webkit-linear-gradient(-45deg, #fff 20%, #ffeeb0 20%, #ffeeb0 30%, #a2d49f 30%, #a2d49f 40%, #69c72f 40%, #69c72f 50%, #f3b447 50%, #f3b447 60%, #63a0ba 60%, #63a0ba 70%, #fff 70% );
+	background: -moz-linear-gradient(-45deg, #fff 20%, #ffeeb0 20%, #ffeeb0 30%, #a2d49f 30%, #a2d49f 40%, #c7c12f 40%, #c7c12f 50%, #f3b447 50%, #f3b447 60%, #63a0ba 60%, #63a0ba 70%, #fff 70% );
+
+/* https://www.gradient-animator.com/ */
+
+	background: linear-gradient(109deg, #33d656, #55a5d8, #d5a429, #d52973);
+	background-size: 800% 800%;
+	
+	-webkit-animation: Veelkleurigheid 44s ease infinite;
+	-moz-animation: Veelkleurigheid 44s ease infinite;
+	animation: Veelkleurigheid 44s ease infinite;
+}	
+	@-webkit-keyframes Veelkleurigheid {
+	    0%{background-position:4% 0%}
+	    50%{background-position:97% 100%}
+	    100%{background-position:4% 0%}
+	}
+	@-moz-keyframes Veelkleurigheid {
+	    0%{background-position:4% 0%}
+	    50%{background-position:97% 100%}
+	    100%{background-position:4% 0%}
+	}
+	@keyframes Veelkleurigheid { 
+	    0%{background-position:4% 0%}
+	    50%{background-position:97% 100%}
+	    100%{background-position:4% 0%}
+	}
